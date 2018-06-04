@@ -1,0 +1,13 @@
+Package: scott
+Type: Package
+Title: Miscilenious Functions that Scott likes to use
+Version: 0.1.0
+Author: Scott Shepard
+Maintainer: <scott@shepardmail.com>
+Description: Functions and snippets that I find myself writing all the time
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+  knitr
+RoxygenNote: 6.0.1
