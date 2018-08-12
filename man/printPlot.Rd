@@ -4,7 +4,7 @@
 \alias{printPlot}
 \title{Print a plot to a specific file path}
 \usage{
-printPlot(plot, name = "Rplot", w = 547, h = 438)
+printPlot(plot, name = "Rplot", w = 547, h = 438, path = "")
 }
 \arguments{
 \item{plot}{The plot object}
@@ -14,6 +14,8 @@ printPlot(plot, name = "Rplot", w = 547, h = 438)
 \item{w}{Width of plot in pixels. Default set to 547}
 
 \item{h}{Height of plot in pixels. Default set to 438}
+
+\item{path}{Base filepath of the directory to be printed to}
 }
 \description{
 This is equivalent to using the export feature in the RStudio plot
@@ -22,9 +24,4 @@ interface, just faster and easier to program into a script.
 \details{
 This function will automatically append today's date using the
 Sys.Date function to the end of the plot.
-
-Many of the eSpark scripts are district specific so this
-is a way of ensuring that the district name is printed in the plot name
-without manually specificying each time.
-If no name is given the function will default to Rplot
 }
